@@ -23,7 +23,7 @@ with col_detail:
         """
     )
 
-main_dongsi = pd.read_csv(".\PRSA_Data_Dongsi_20130301-20170228.csv")  # read a CSV file inside the 'data" folder next to 'app.py'
+main_dongsi = pd.read_csv("data/PRSA_Data_Dongsi_20130301-20170228.csv")  # read a CSV file inside the 'data" folder next to 'app.py'
 summer_dongsi = main_dongsi.loc[(main_dongsi["month"].isin([6,7,8]))]
 summer_dongsi = summer_dongsi.dropna()
 
