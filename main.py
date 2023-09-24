@@ -42,8 +42,8 @@ st.subheader('Temperature Changes in 24 hour')
 st.bar_chart(data=dongsi_24, x = "hour", y = "TEMP")
 
 
-min = dongsi_24["TEMP"].min().round()
-max = dongsi_24["TEMP"].max().round()
+min = int(dongsi_24["TEMP"].min())
+max = int(dongsi_24["TEMP"].max())
 st.markdown(f"**Highest** temperature in a day (summer): ***{max} Celcius***")
 st.markdown(f"**Lowest** temperature in a day (summer): ***{min} Celcius***")
 
